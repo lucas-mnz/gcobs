@@ -1,0 +1,89 @@
+body {
+    background-color: #2C2E38;
+    max-width: 160px;
+    margin: auto;
+    color: rgb(225, 224, 225);
+    font: normal 13px "Segoe UI", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #646464;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #3C404B;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #646464;
+}
+
+::-webkit-resizer {
+    background-color: #3C404B;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.button {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #3C404B;
+    border: none;
+    border-radius: 3px;
+    color: rgb(225, 224, 225);
+    padding: 2px;
+    margin: 1px;
+    font: normal 12px "Segoe UI", sans-serif;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #41434d;
+}
+
+input[type=text] {
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: #1f1e1f;
+    color: rgb(225, 224, 225);
+    text-align: center;
+    margin: 2px;
+    display: block;
+    width: 92%;
+}
+
+input[type=text]::placeholder {
+    color: rgb(92, 92, 92);
+}
+
+input[type=text]:disabled {
+    color: rgb(92, 92, 92);
+}
+
+h1 {
+    color: rgb(225, 224, 22d5);
+    font: normal 13px "Segoe UI", sans-serif;
+    text-align: center;
+    background-color: #2f323b;
+    padding-bottom: 2px;
+}

@@ -1,0 +1,67 @@
+<!--
+    EAD Unisc
+    Gerador de Caracteres
+    Versão 1.3 - 06/11/2023
+
+    Desenvolvido por Lucas Munhoz
+    lucasmunhoz@unisc.br
+
+    Design gráfico por Maicon Cássio Riedger
+    maiconr@unisc.br
+
+    Assessoria para Educação a Distância
+    Universidade de Santa Cruz do Sul
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex">
+    <title>Unisc - GC para OBS - Dock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/dock-style.css">
+    <script src="assets/dock-script.js"></script>
+</head>
+
+<body>
+
+    <div class="logo"><img src="assets/eadunisc.png"></div>
+
+    <h1>Definições do evento</h1>
+    <input type="text" id="input-event" placeholder="Nome do evento" maxlength="90">
+    <div class="button">
+        <div><button id="button-add-info" onclick="setEvent()">Atualizar</button></div>
+    </div>
+
+
+    <h1>QR Code</h1>
+    <div id="link">
+        <input type="radio" name="link_type" value="link" checked>
+        <label for="link">Site</label>
+        <input type="radio" name="link_type" value="form">
+        <label for="form">Formulário</label>
+    </div>
+    <input type="text" id="link-title" placeholder="Título">
+    <input type="text" id="link-url" placeholder="Link">
+
+    <div class="button">
+        <div><button id="button-form" onclick="setLink()">Exibir QR Code</button></div>
+    </div>
+
+    <h1>Gerador de caracteres</h1>
+
+    <div><input type="text" id="input-name" placeholder="Nome" maxlength="60"></div>
+    <div><input type="text" id="input-desc" placeholder="Info" maxlength="75"></div>
+
+    <div class="button">
+        <div><button id="show-hide-GC" onclick="gc()">Mostrar GC</button></div>
+        <div><button id="btn_bottomline" onclick="bottomline()">Ocultar Bottomline</button></div>
+
+    </div>
+
+</body>
+
+</html>
