@@ -1,0 +1,107 @@
+<!--
+    EAD Unisc
+    Gerador de Caracteres
+    Versão 0.8 - 09/11/2023
+
+    Desenvolvido por Lucas Munhoz
+    lucasmunhoz@unisc.br
+
+    Design gráfico por Maicon Cássio Riedger
+    maiconr@unisc.br
+
+    Assessoria para Educação a Distância
+    Universidade de Santa Cruz do Sul
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex">
+    <title>Unisc - GC para OBS (Browser)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto:wght@500&display=swap');
+    </style>
+</head>
+
+<body onload="getClock(); getWeather(); getNews()"> <!--getWeather()-->
+    <!--NOME DO EVENTO E LOGO DA UNISC-->
+    <div id="title">
+        <div id="title_txt" class="stage_1">
+            <span> <!--Aqui irá o título enviado pela dock--> </span>
+        </div>
+        <div id="title_logo">
+            <img src="assets/bl/unisc.webp" width="55px" style="vertical-align: middle;">
+        </div>
+    </div>
+
+    <!--GERADOR DE CARACTERES-->
+    <div class="GC">
+        <div id="gc_bg_image" class="stage_0"><img src="assets/gc/bkg.png"></div>
+        <div id="gc_bg_bottom" class="stage_0"></div>
+        <div id="gc_bg_top" class="stage_0"><img src="assets/gc/gc-top.png"></div>
+        <div id="gc_name" class="stage_0"
+            style="color: #015791; font-family: 'Bebas Neue', cursive; font-weight: bold; font-size: 40px; text-transform: uppercase;">
+            Nome Completo</div>
+        <div id="gc_desc" class="stage_0"
+            style="color: #4B4B4D; font-family: 'Bebas Neue', cursive; font-size: 32px; text-transform: uppercase;">
+            Descrição</div>
+    </div>
+
+    <!--LINK DE WEBSITE-->
+    <div id="link" class="stage1">
+        <div id="link-title">acesse o formulário</div>
+        <div id="link-qr"><img src="" style="height: 220px; width: 220px;"></div>
+        <div id="link-url">goolnk.com/AqJYaW</div>
+    </div>
+
+    <!--BOTTOMLINE-->
+    <div id="bottomline" class="stage_1">
+        <div></div>
+        <div id="news-container" class="stage1">
+            <p> CARREGANDO CONTEÚDO </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+        </div>
+
+        <div id="bl_left">
+            <div class="container">
+                <div class="info">
+                    <div>
+                        <img src="assets/bl/unisc.webp">
+                    </div>
+                    <div class="website">UNISC.BR/NOTICIAS</div>
+                </div>
+            </div>
+            <img src="assets/bl/left.png">
+        </div>
+
+        <div id="bl_right">
+            <div class="container">
+                <div class="banner"><!--Anúncio aparece como background-image no CSS--></div>
+                <div class="info">
+                    <div id="time">
+                        00:00
+                    </div>
+                    <div>
+                        <img id="weather_icon" src="">
+                    </div>
+                    <div id="weather">
+                        00°C
+                    </div>
+                </div>
+            </div>
+            <img src="assets/bl/right.png">
+        </div>
+    </div>
+</body>
+
+</html>
